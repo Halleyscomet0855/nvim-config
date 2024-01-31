@@ -14,6 +14,9 @@ vim.keymap.set("n", "N", "Nzzv")
 
 vim.keymap.set("x", "<leader>p", "\"_dP")
 
-vim.keymap.set("n", "<leader>y", "<C-u>zz")
-vim.keymap.set("v", "n", "nzzv")
-vim.keymap.set("n", "N", "Nzzv")
+vim.keymap.set("n", "<leader>y", "\"+y")
+vim.keymap.set("v", "<leader>y", "\"+y")
+vim.keymap.set("n", "<leader>Y", "\"+Y")
+
+vim.keymap.set("t", "<C-x>", "<C-\\><C-n>")
+
