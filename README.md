@@ -31,5 +31,5 @@ which initializes the plugins folder. Any change will usually fall under one of 
 ## List of to be implemented features
 - Tabs for buffers
 - Using tab to switch buffers
-- Using <C-h> to move to file tree, and vice versa
+- (DONE)! Using "<C-h>" to move to file tree, and vice versa
 - git implementation (in-progress)
