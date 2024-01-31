@@ -20,3 +20,4 @@ vim.keymap.set("n", "<leader>Y", "\"+Y")
 
 vim.keymap.set("t", "<C-x>", "<C-\\><C-n>")
 
+vim.keymap.set("n", "<TAB>", ":bnext<CR>")
