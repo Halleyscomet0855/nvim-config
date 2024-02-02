@@ -2,6 +2,7 @@ return {
 	"nvimtools/none-ls.nvim",
 	config = function()
 		local null_ls = require("null-ls")
+    local wk = require("which-key")
 
 		null_ls.setup({
 			sources = {
@@ -12,6 +13,10 @@ return {
 				null_ls.builtins.formatting.black,
 			},
 		})
-		vim.keymap.set("n", "<leader>gf", vim.lsp.buf.format, {})
+    wk.register({
+      g = {
+        f = {vim.lsp.buf.format, "Reformat Code"}},
+      {prefix = "<leader>"}})
+
 	end,
 }
