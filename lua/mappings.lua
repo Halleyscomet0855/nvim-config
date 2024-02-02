@@ -1,3 +1,6 @@
+local wk = require("which-key")
+wk.register({})
+
 vim.keymap.set("n", "<C-h>", "<C-w>h")
 vim.keymap.set("n", "<C-l>", "<C-w>l")
 vim.keymap.set("n", "<C-k>", "<C-w>k")
@@ -21,3 +24,7 @@ vim.keymap.set("n", "<leader>Y", "\"+Y")
 vim.keymap.set("t", "<C-x>", "<C-\\><C-n>")
 
 vim.keymap.set("n", "<TAB>", ":bnext<CR>")
+
+
+vim.keymap.set("n", "j", "gj")
+vim.keymap.set("n", "k", "gk")
