@@ -44,8 +44,9 @@ wk.register({
 })
 
 wk.register({
+  ["<leader>"] = {
   c = {
     a = { vim.lsp.buf.code_action, "Define code action" },
+    },
   },
-  { prefix = "<leader>" },
 })
