@@ -14,39 +14,48 @@ vim.keymap.set("n", "<C-u>", "<C-u>zz")
 vim.keymap.set("n", "n", "nzzv")
 vim.keymap.set("n", "N", "Nzzv")
 
-vim.keymap.set("x", "<leader>p", "\"_dP")
+vim.keymap.set("x", "<leader>p", '"_dP')
 
-vim.keymap.set("n", "<leader>y", "\"+y")
-vim.keymap.set("v", "<leader>y", "\"+y")
-vim.keymap.set("n", "<leader>Y", "\"+Y")
+vim.keymap.set("n", "<leader>y", '"+y')
+vim.keymap.set("v", "<leader>y", '"+y')
+vim.keymap.set("n", "<leader>Y", '"+Y')
 
 vim.keymap.set("t", "<C-x>", "<C-\\><C-n>")
 
 vim.keymap.set("n", "<TAB>", ":bnext<CR>")
 
-
 vim.keymap.set("n", "j", "gj")
 vim.keymap.set("n", "k", "gk")
 
 wk.register({
-f = {
-  name = "Telescope",
-  f = {"<cmd>Telescope find_files<cr>", "Find File" },
-  g = {"<cmd>Telescope live_grep<cr>", "Find Word" },
-},{prefix = "<leader>"}
+	["<leader>"] = {
+		f = {
+			name = "Telescope",
+			f = { "<cmd>Telescope find_files<cr>", "Find File" },
+			g = { "<cmd>Telescope live_grep<cr>", "Find Word" },
+		},
+	},
 })
 
 wk.register({
-  g = {
-    d = { vim.lsp.buf.hover, "Hover" },
-  },
-  K = { vim.lsp.buf.definition, "Define Function" },
+	g = {
+		d = { vim.lsp.buf.hover, "Hover" },
+	},
+	K = { vim.lsp.buf.definition, "Define Function" },
 })
 
 wk.register({
-  ["<leader>"] = {
-  c = {
-    a = { vim.lsp.buf.code_action, "Define code action" },
-    },
-  },
+	["<leader>"] = {
+		c = {
+			a = { vim.lsp.buf.code_action, "Define code action" },
+		},
+	},
+})
+
+wk.register({
+	["<leader>"] = {
+		g = {
+			f = { vim.lsp.buf.format, "Reformat Code" },
+		},
+	},
 })
