@@ -37,22 +37,6 @@ return {
         capabilities = capabilities,
       })
 
-      wk.register({
-        g = {
-          d = { vim.lsp.buf.hover, "Hover" },
-        },
-        K = { vim.lsp.buf.definition, "Define Function" },
-      })
-      wk.register({
-        c = {
-          a = { vim.lsp.buf.code_action, "Define code action" },
-        },
-        { prefix = "<leader>" },
-      })
-
-     --- vim.keymap.set("n", "K", vim.lsp.buf.hover, {})
-      ---vim.keymap.set("n", "gd", vim.lsp.buf.definition, {})
-      --- vim.keymap.set({ "n", "v" }, "<leader>ca", vim.lsp.buf.code_action, {})
     end,
   },
 }

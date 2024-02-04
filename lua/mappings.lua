@@ -1,5 +1,4 @@
 local wk = require("which-key")
-wk.register({})
 
 vim.keymap.set("n", "<C-h>", "<C-w>h")
 vim.keymap.set("n", "<C-l>", "<C-w>l")
@@ -28,3 +27,25 @@ vim.keymap.set("n", "<TAB>", ":bnext<CR>")
 
 vim.keymap.set("n", "j", "gj")
 vim.keymap.set("n", "k", "gk")
+
+wk.register({
+f = {
+  name = "Telescope",
+  f = {"<cmd>Telescope find_files<cr>", "Find File" },
+  g = {"<cmd>Telescope live_grep<cr>", "Find Word" },
+},{prefix = "<leader>"}
+})
+
+wk.register({
+  g = {
+    d = { vim.lsp.buf.hover, "Hover" },
+  },
+  K = { vim.lsp.buf.definition, "Define Function" },
+})
+
+wk.register({
+  c = {
+    a = { vim.lsp.buf.code_action, "Define code action" },
+  },
+  { prefix = "<leader>" },
+})
