@@ -29,7 +29,8 @@ return {
     {
     "mfussenegger/nvim-dap-python",
         dependencies = {
-            "mfussenegger/nvim-dap"
+            "mfussenegger/nvim-dap",
+            "rcarriga/nvim-dap-ui",
         },
         config = function ()
             local dap = require"dap"
@@ -51,7 +52,7 @@ return {
                     else
                         cb({
                             type = 'executable',
-                            command = '.virtualenvs/debugpy/bin/python',
+                            command = "~/.virtualenvs/debugpy/Scripts/python.exe",
                             args = { '-m', 'debugpy.adapter' },
                             options = {
                             source_filetype = 'python',
@@ -78,7 +79,6 @@ return {
                       },
                     }
             end,
-
 
 },
 }
