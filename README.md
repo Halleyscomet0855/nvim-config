@@ -33,4 +33,5 @@ which initializes the plugins folder. Any change will usually fall under one of 
 - (DONE!) Using tab to switch buffers
 - (DONE) Using "C-h" to move to file tree, and vice versa
 -  git implementation (in-progress)
-- Cheat sheet for keybinds 
+    - ALmost done, however still wanna check out lazy git first
+- (DONE!) Cheat sheet for keybinds 
