@@ -35,3 +35,9 @@ which initializes the plugins folder. Any change will usually fall under one of 
 -  git implementation (in-progress)
     - ALmost done, however still wanna check out lazy git first
 - (DONE!) Cheat sheet for keybinds 
+
+## Features to think on:
+- Zero-lsp. Can I integrate this into my setup? If so, how? What does it do anyways?
+- Refactoring
+- debugging. Is this really necessary? Unsure of what to do with it, it seems like a major pain in the ass to config.
+- Rechecking of lsp and treesitter functions. Need to check whether or not it's still going.
