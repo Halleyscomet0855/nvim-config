@@ -41,3 +41,8 @@ which initializes the plugins folder. Any change will usually fall under one of 
 - Refactoring
 - debugging. Is this really necessary? Unsure of what to do with it, it seems like a major pain in the ass to config.
 - Rechecking of lsp and treesitter functions. Need to check whether or not it's still going.
+- vim.wiki, for writing essays and the like. Likely to have multiple dependencies, such as:
+    - Pandoc
+    - LaTeX (which I don't understand)
+    - Some kind of Focus mode editor? that let's my current line be centered. Not sure yet, but eh. 
+    - Zotero, or a reference manager. Unfortunately, that does mean I need to actually figure out how to generate .bib files for Pandoc.
