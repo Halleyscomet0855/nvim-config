@@ -35,6 +35,9 @@ return {
       lspconfig.pyright.setup({
         capabilities = capabilities,
       })
+      lspconfig.html.setup({
+        capabilities = capabilities,
+      })
 
     end,
   },

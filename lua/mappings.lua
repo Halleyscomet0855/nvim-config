@@ -44,6 +44,8 @@ wk.register({
 
 wk.register({
 	["<leader>"] = {
+    x = {"<cmd>bdelete<cr>", "Exit Buffer"},
+
 		c = {
 			a = { vim.lsp.buf.code_action, "Define code action" },
 		},

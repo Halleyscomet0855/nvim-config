@@ -1,3 +1,4 @@
+vim.g.have_nerd_font = true
 vim.cmd("set expandtab")
 vim.opt.tabstop = 2
 vim.opt.softtabstop = 2
