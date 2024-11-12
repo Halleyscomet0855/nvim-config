@@ -1,14 +1,11 @@
 # Halley's nvim config
 
 ## Introduction
-Howdy. So, if you're here, then that means you've gotten access into my nvim config. Pretty cool, huh?... Ah, who am I kidding. It's very much shit, but it's my shit, alright?
-
-This will serve as my documentation for the development of this config. I'm going to treat this 
-an ongoing project, so, yeah. Should be fun!
+Hello! This is an old verion of my neovim config that I've left very barren. I've since created a new config that is bundled with my dotfiles (which are private). Still, I hope it can give a little glimpse into how I approach projects!
 
 ## The Basics
-This config follows a modularized process; where each plugin gets its own program. All of these 
-plugins are initialized in init.lua, with the program 
+This config follows a modularized process; where each plugin gets its own file. All of these 
+plugins are initialized in init.lua, with the function 
 '''
 setup("plugins")
 '''
