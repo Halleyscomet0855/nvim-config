@@ -1,7 +1,7 @@
 # Halley's nvim config
 
 ## Introduction
-Hello! This is an old verion of my neovim config that I've left very barren. I've since created a new config that is bundled with my dotfiles (which are private). Still, I hope it can give a little glimpse into how I approach projects!
+Hello! This is an old verion of my neovim config that I've left very barren. I've since created a new config that is bundled with my dotfiles (which are private). Still, I hope it can give a little glimpse into how I approach projects! Sidenote: This is a pretty old config that emerged when I first started learning how to program, so it may look messy. I'd like to think that I can program a bit better now, but who knows.
 
 ## The Basics
 This config follows a modularized process; where each plugin gets its own file. All of these 
